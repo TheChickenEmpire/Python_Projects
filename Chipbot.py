@@ -1061,28 +1061,7 @@ def ai():
 
         elif ask == 'do you use ai':
             te.sleep(0.5)
-            print("No because actual ai would take 5 hours to answer a question but I could run actual ai for you just type Gpt")
-            
-
-        elif ask == 'gpt':
-            te.sleep(0.5)
-            print("Opened Ai")
-            openai.api_key = "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"
-            while True:
-                print("You type Quit to Quit:")
-                Chat = input("")
-                if Chat == 'Quit':
-                    print("Chipbot: \nIm back!")
-                    break
-                elif Chat == 'quit':
-                    print("Chipbot: \nIm back!")
-                    break
-                else:
-                    try:
-                        completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": Chat}])
-                        print(completion.choices[0].message.content)
-                    except:
-                        print('Connection failed')
+            print("No because actual ai would take 5 hours to answer a question")
 
         elif ask == 'im glad your back':
             te.sleep(0.5)

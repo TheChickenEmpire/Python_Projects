@@ -1,17 +1,17 @@
-import winsound
-import time
+from time import sleep as sp
+from winsound import Beep
+import os
 while True:
     try:
-        te = int(input("Time(Sec):\n"))
-        time.sleep(te)
-        T = 0
-        while T < 4:
-            T = T + 1
-            winsound.Beep(550, 100)
-        time.sleep(0.2)
-        T = 0
-        while T < 4:
-            T = T + 1
-            winsound.Beep(550, 100)
+        wait = int(input('Time(sec):\n'))
+        if wait > 0:
+            while wait > 0:
+                print(wait)
+                sp(1)
+                wait = wait - 1
+            print('Times Up')
+            Beep(500, 2000)
+        else:
+            print('Non-valid input')
     except:
-        print("Non-valid input")
+        print('Non-valid input')

@@ -55,4 +55,4 @@ def Mirror(place):
             break
 if __name__ == '__main__':
     t = input('Location:\n')
-    Mirror()
+    Mirror(t)

@@ -17,6 +17,8 @@ def learner_bot():
                         if wer == "no":
                             pass
                         else:
+                            answer = answer.replace('"', '')
+                            Text = Text.replace('"', '')
                             ans = '"' + answer + '"'
                             Text = '"' + Text + '"'
                             with open('learner_bot_database.py', 'a') as dw:
@@ -26,11 +28,6 @@ def learner_bot():
         except ModuleNotFoundError:
             with open('learner_bot_database.py', 'a') as dw:
                 dw.write('def database(Text):\n    if Text == "hi":\n        return "Hi"\n')
-
-        except SyntaxError:
-            print("Remove last entered data from database immediately!!!")
-            print("Last entered data contains characters that disturb code!!!")
-            break
 
         except:
             print("Unknown Error Has Occured")

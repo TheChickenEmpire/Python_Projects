@@ -394,7 +394,7 @@ def main():
             speak("what should i write")
             note = listen()
             speak("should i include date and time")
-            yn = listen()
+            yn = str(listen())
             yn = yn.lower()
             try:
                 if 'yes' in yn:
@@ -518,6 +518,10 @@ def main():
         elif 'set volume to ' in command:
             command = command.replace('set volume to ', '')
             setsound(command)
+            
+        elif 'tell them' in command:
+            speak('Subscribe to The Chicken Empire')
+
         else:
             speak("I am sorry I don't know what you mean")
             with open('Chipbot voice assistant Errors.txt', 'a') as fw:
