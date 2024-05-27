@@ -8,4 +8,4 @@ teams,  = st.columns([1])
 with teams:
     st.image(Image.open("Stem.png"), width= 600)
     st.markdown("https://teams.microsoft.com/v2/")
-    st.link_button('Learn More', )
+    st.link_button('Learn More', 'https://stemclublearn.streamlit.app/')
