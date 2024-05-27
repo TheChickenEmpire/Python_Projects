@@ -7,4 +7,3 @@ st.text("Stem club is a place in lunch that you can code, learn, 3dmodel and mor
 st.image(Image.open('images.png'))
 if st.button('Back to main'):
     keyboard.press_and_release('ctrl+w')
-    
