@@ -9,7 +9,7 @@ with stem:
 with im:
     st.image(Image.open("r.png"), width= 300)
 with i:
-    st.text('           ')
+    st.text('  ')
 st.image(Image.open("Stem.png"), width= 600)
 st.markdown("https://teams.microsoft.com/v2/")
 st.link_button('Learn More', 'https://stemclublearn.streamlit.app/')
