@@ -1,7 +1,4 @@
 import streamlit as st
 from PIL import Image
 st.set_page_config(page_title='The_Chicken_Empire', page_icon=":chicken:", layout= 'wide')
-with st.container():
-    st.subheader("This is a test run")
-status = st.radio('Select gender:', ('Male', 'Female', 'Non-binary'))
-st.success(status)
+st.markdown("[![Foo](C:\Users\lucas\OneDrive\Pictures\Screenshots\Stem)](https://teams.microsoft.com/v2/)")
