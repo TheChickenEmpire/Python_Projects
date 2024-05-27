@@ -7,4 +7,4 @@ st.text("At STEM Club, we delve into the captivating world of coding and technol
 teams,  = st.columns([1])
 with teams:
     st.image(Image.open("Stem.png"), width= 600)
-    st.markdown("https:/teams.microsoft.com/v2/")
+    st.markdown("https://teams.microsoft.com/v2/")
