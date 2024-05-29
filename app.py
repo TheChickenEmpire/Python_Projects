@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 st.set_page_config(page_title='Chicken', page_icon=":chicken:", layout= 'wide')
-hi = st.columns(3)
+hi = st.columns(2)
 with hi:
     st.header('**Welcome to**')
 with hi:
