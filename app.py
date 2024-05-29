@@ -5,7 +5,7 @@ hi1, hi2 = st.columns([1,1])
 with hi1:
     st.header('**Welcome to**')
 with hi2:
-    st.image(Image.open('Chicks.png'),200)
+    st.image(Image.open('Chicks.png'), 100)
 st.subheader(':red[**The Chicken Empire**]')
 st.subheader('_website_')
 st.text('')
