@@ -14,7 +14,7 @@ st.text('Hi im a youtuber who likes coding \neven though I am 12 years old I hav
 st.link_button('Click Here Plz', 'https://www.youtube.com/@Join_The_Chicken_Empire/featured')
 st.divider()
 st.subheader('My Subscribers')
-st.text('Smakshi Sarvaria\nZxJoshua33\nAmy Cartwright\nBayu Trikurnia\nEduardo Díaz\nzian asher\nyvette metzger\nContry balls\nsheuli bhowmik\nEster Nakale\nHanan Alwaqet\nTấn Hà Thị\nKing Nathan\nTeremoana Eli\nEric Hernán Herazo Barrios\nMuseum')
+st.text('Smakshi Sarvaria\nZxJoshua33\nAmy Cartwright\nBayu Trikurnia\nEduardo Díaz\nzian asher\nyvette metzger\nContry balls\nsheuli bhowmik\nEster Nakale\nHanan Alwaqet\nTấn Hà Thị\nKing Nathan\nTeremoana Eli\nEric Hernán Herazo Barrios\nMuseum\nSoshjackhe hello 120')
 st.divider()
 st.subheader('Wonderful portraits:')
 st.image(Image.open('CE Poster (Portrait).png'), width=400)
