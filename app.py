@@ -1,19 +1,6 @@
 import streamlit as st
 from PIL import Image
-from streamlit_timeline import timeline
-
-items = [
-    {"id": 1, "content": "2022-10-20", "start": "2022-10-20"},
-    {"id": 2, "content": "2022-10-09", "start": "2022-10-09"},
-    {"id": 3, "content": "2022-10-18", "start": "2022-10-18"},
-    {"id": 4, "content": "2022-10-16", "start": "2022-10-16"},
-    {"id": 5, "content": "2022-10-25", "start": "2022-10-25"},
-    {"id": 6, "content": "2022-10-27", "start": "2022-10-27"},
-]
-
-line = timeline(items, groups=[], options={}, height="300px")
-st.subheader("Selected item")
-st.write(line)
+from streamlit_timeline import st_timeline
 st.set_page_config(page_title='Chicken', page_icon=":chicken:", layout= 'wide')
 st.logo(Image.open('Chicken.png'))
 st.header('Welcome to')
@@ -29,6 +16,19 @@ st.link_button('Click Here Plz', 'https://www.youtube.com/@Join_The_Chicken_Empi
 st.divider()
 st.subheader('My Subscribers')
 st.text('Smakshi Sarvaria\nZxJoshua33\nAmy Cartwright\nBayu Trikurnia\nEduardo Díaz\nzian asher\nyvette metzger\nContry balls\nsheuli bhowmik\nEster Nakale\nHanan Alwaqet\nTấn Hà Thị\nKing Nathan\nTeremoana Eli\nEric Hernán Herazo Barrios\nMuseum\nSoshjackhe hello 120')
+st.divider()
+items = [
+    {"id": 1, "content": "2022-10-20", "start": "2022-10-20"},
+    {"id": 2, "content": "2022-10-09", "start": "2022-10-09"},
+    {"id": 3, "content": "2022-10-18", "start": "2022-10-18"},
+    {"id": 4, "content": "2022-10-16", "start": "2022-10-16"},
+    {"id": 5, "content": "2022-10-25", "start": "2022-10-25"},
+    {"id": 6, "content": "2022-10-27", "start": "2022-10-27"},
+]
+
+timeline = st_timeline(items, groups=[], options={}, height="300px")
+st.subheader("Selected item")
+st.write(timeline)
 st.divider()
 st.subheader('Wonderful portraits:')
 st.image(Image.open('CE Poster (Portrait).png'), width=400)
