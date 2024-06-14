@@ -4,7 +4,7 @@ st.set_page_config(page_title='Chicken Empire', page_icon=":chicken:", layout= '
 st.logo(Image.open('Chicken.png'))
 st.header('Welcome to')
 st.subheader(':rainbow[**The Chicken Empire**]')
-st.subheader('_website_')
+st.subheader('_website_') 
 st.divider()
 st.subheader('Recent News:')
 st.text('Trying as hard as I possibly can to still \nmake videos even with school')
