@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-st.set_page_config(page_title='Chicken', page_icon=":chicken:", layout= 'wide')
+st.set_page_config(page_title='Chicken Empire', page_icon=":chicken:", layout= 'wide')
 st.logo(Image.open('Chicken.png'))
 st.header('Welcome to')
 st.subheader(':rainbow[**The Chicken Empire**]')
