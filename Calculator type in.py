@@ -4,6 +4,6 @@ def Calculator():
             Calculate = str(input("Input Calculation:\n"))
             Calculate = int(eval(Calculate))
             print(Calculate)
-        except FileExistsError:
+        except:
             print("Error")
 Calculator()
