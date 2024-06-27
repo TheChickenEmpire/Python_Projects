@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 st.set_page_config(page_title='Chicken Empire', page_icon=":chicken:", layout= 'wide')
 st.logo(Image.open('Chicken.png'))
-st.header('Welcome '+str(st.experimental_user.email)+' to')
+st.header('Welcome '+str(st.experimental_user.to_dict())+' to')
 st.subheader(':rainbow[**The Chicken Empire**]')
 st.subheader('_website_') 
 st.divider()
