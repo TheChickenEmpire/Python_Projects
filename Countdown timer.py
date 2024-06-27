@@ -1,6 +1,5 @@
 from time import sleep as sp
 from winsound import Beep
-import os
 while True:
     try:
         wait = int(input('Time(sec):\n'))
