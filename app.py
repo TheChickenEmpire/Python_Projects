@@ -14,7 +14,7 @@ st.text('Hi im a youtuber who likes coding\nwe all have dreams\nand If you Subsc
 st.link_button('Click Here Plz', 'https://www.youtube.com/@Join_The_Chicken_Empire/featured')
 st.divider()
 st.subheader('My Subscribers')
-st.text("Ramona Time\nTooklesoft\nSoshjackhe hello 120\nZxJoshua33\nAnun\nVineet Shrivastava\nBayu Trikurnia\nNoFace247\nSabina Ferk\nArcturus Ciel\nEduardo Díaz\nDavid Gilbert\nzian asher\nyvette metzger\nEster Nakale\nИбраһим 💪\nRidewithYamphel\nKAM22312\nsheuli bhowmik\nHanan Alwaqet\nKing Nathan\nAIRWIND'S CHANNEL\nTeremoana Eli\nEric Hernán Herazo Barrios")
+st.text("Ramona Time\nSmakshi Sarvaria\nTooklesoft\nSoshjackhe hello 120\nZxJoshua33\nAnun\nAmy Cartwright\nVineet Shrivastava\nBayu Trikurnia\nNoFace247\nSabina Ferk\nArcturus Ciel\nEduardo Díaz\nDavid Gilbert\nzian asher\nyvette metzger\nEster Nakale\nИбраһим 💪\nRidewithYamphel\nKAM22312\nsheuli bhowmik\nHanan Alwaqet\nTấn Hà Thị\nKing Nathan\nAIRWIND'S CHANNEL\nEster Lava\nTeremoana Eli\nEric Hernán Herazo Barrios")
 st.divider()
 st.subheader('History:')
 st.text('June 23:\nChicken Empire Created\n\nJuly:\nChicken Empire faces war\n\n2024:\nYoutube channel starts\n\nMarch 2024 - April 2024:\nChannel thrives\n\nApril 24 - June 24:\nChannel views and subs drop of me going back to school\n\nJune 24:\nI create this website\n\n')
