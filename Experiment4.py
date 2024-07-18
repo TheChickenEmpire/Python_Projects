@@ -1,1 +1,2 @@
-help('Illegal mode')
+hi = 28388/12
+print(hi)

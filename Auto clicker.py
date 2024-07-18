@@ -4,4 +4,4 @@ import time
 while True:
     if is_pressed('enter'):
         click(LEFT)
-        time.sleep(0.5)
+        time.sleep(0.007)
