@@ -1,7 +1,9 @@
-from keyboard import is_pressed
-from mouse import click, LEFT
+import mouse
 import time
+import keyboard
+def click():
+    mouse.click(mouse.LEFT)
 while True:
-    if is_pressed('enter'):
-        click(LEFT)
-        time.sleep(0.007)
+    if keyboard.is_pressed('ctrl'):
+        click()
+    time.sleep(0.007)
