@@ -53,4 +53,3 @@ st.subheader('Credits')
 st.text('Donnie(My other friend)\nZxJoshua33(You should go see his channel)\nOppositeAce8412(You should go see his channel)\nChickens\nEthan(My other friend)')
 if st.checkbox('Secret'):
     st.link_button('Click here to \nredeem your prize','https://www.youtube.com/shorts/SXHMnicI6Pg')
-st.date_input('Hi')
