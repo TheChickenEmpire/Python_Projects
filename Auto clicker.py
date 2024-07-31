@@ -6,4 +6,4 @@ def click():
 while True:
     if keyboard.is_pressed('ctrl'):
         click()
-    time.sleep(0.0009)
+    time.sleep(0.001)
