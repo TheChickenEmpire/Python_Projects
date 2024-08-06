@@ -44,7 +44,6 @@ def ai():
         import openai
     except:
         print("Please check you have installed these modules:")
-        te.sleep(1)
         print("time")
         print("segno")
         print("translate")
