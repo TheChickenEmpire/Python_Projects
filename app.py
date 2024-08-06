@@ -10,11 +10,11 @@ st.divider()
 currentDateAndTime = datetime.now()
 time = str(currentDateAndTime.strftime("%H:%M"))
 if time < "12:00":
-    time = "Good morning!"
+    time = "Good evening!"
 if "12:00" <= time < "18:00":
     time = "Good afternoon!"
 else:
-    time = "Good evening!"
+    time = "Good morning!"
 st.subheader(time)
 st.divider()
 st.subheader('Recent News:')
