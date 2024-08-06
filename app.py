@@ -8,7 +8,7 @@ st.header(':rainbow[**The Chicken Empire**]')
 st.subheader('_website_') 
 st.divider()
 currentDateAndTime = datetime.now()
-time = currentDateAndTime.strftime("%H:%M")
+time = str(currentDateAndTime.strftime("%H:%M"))
 if time < "12:00":
     time = "Good morning!"
 elif "12:00" <= time < "18:00":
