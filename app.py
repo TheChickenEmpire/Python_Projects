@@ -15,7 +15,7 @@ elif "12:00" <= time < "18:00":
     time = "Good afternoon!"
 else:
     time = "Good evening!"
-st.subheader(st.experimental_user.get())
+st.subheader(time)
 st.divider()
 st.subheader('Recent News:')
 st.text(st.secrets["RecentNews"])
