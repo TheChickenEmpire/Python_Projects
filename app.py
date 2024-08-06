@@ -8,15 +8,14 @@ st.header(':rainbow[**The Chicken Empire**]')
 st.subheader('_website_') 
 st.divider()
 currentDateAndTime = datetime.now()
-h = currentDateAndTime.strftime("%H:%M")
-time = 7
+time = currentDateAndTime.strftime("%H:%M")
 if time < "12:00":
     time = "Good morning!"
-if "12:00" <= time < "18:00":
+elif "12:00" <= time < "18:00":
     time = "Good afternoon!"
 else:
     time = "Good evening!"
-st.subheader(h)
+st.subheader(time)
 st.divider()
 st.subheader('Recent News:')
 st.text(st.secrets["RecentNews"])
