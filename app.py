@@ -9,6 +9,12 @@ st.subheader('_website_')
 st.divider()
 currentDateAndTime = datetime.now()
 time = currentDateAndTime.strftime("%H:%M:%S")
+if time < "12:00":
+    time = "Good morning!"
+elif "12:00" <= time < "18:00":
+    time = "Good afternoon!"
+else:
+    time = "Good evening!"
 st.subheader(time)
 st.divider()
 st.subheader('Recent News:')
