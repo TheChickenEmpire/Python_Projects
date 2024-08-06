@@ -11,7 +11,7 @@ currentDateAndTime = datetime.now()
 time = str(currentDateAndTime.strftime("%H:%M"))
 if time < "12:00":
     time = "Good morning!"
-elif "12:00" <= time < "18:00":
+if "12:00" <= time < "18:00":
     time = "Good afternoon!"
 else:
     time = "Good evening!"
