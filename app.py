@@ -1,10 +1,10 @@
 import streamlit as st
 from PIL import Image
+st.set_page_config(page_title='Chicken Empire', page_icon=":chicken:", layout= 'wide')
+st.logo(Image.open('Chicken.png'))
 with st.sidebar:
     st.text('My channel\n\/\/\/\/')
     st.link_button("Channel", 'https://www.youtube.com/@TheChickenEmpire')
-st.set_page_config(page_title='Chicken Empire', page_icon=":chicken:", layout= 'wide')
-st.logo(Image.open('Chicken.png'))
 st.subheader('Welcome to')
 st.header(':rainbow[**The Chicken Empire**]')
 st.subheader('_website_') 
