@@ -9,7 +9,7 @@ st.subheader('_website_')
 st.divider()
 currentDateAndTime = datetime.now()
 time = str(currentDateAndTime.strftime("%H:%M"))
-if time < "6:00":
+if time < "18:00":
     time = "Good evening!"
 if "12:00" <= time < "18:00":
     time = "Good afternoon!"
