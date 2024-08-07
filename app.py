@@ -3,7 +3,7 @@ from PIL import Image
 st.set_page_config(page_title='Chicken Empire', page_icon=":chicken:", layout= 'wide')
 st.logo(Image.open('Chicken.png'))
 with st.sidebar:
-    st.text('My channel\n\/\/\/\/')
+    st.subheader('My channel\n\/\/\/\/')
     st.link_button("Channel", 'https://www.youtube.com/@TheChickenEmpire')
 st.subheader('Welcome to')
 st.header(':rainbow[**The Chicken Empire**]')
