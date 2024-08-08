@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 st.set_page_config(page_title='Chicken Empire Comic', page_icon=":chicken:", layout= 'wide')
 st.logo(Image.open('Chicken.png'))
-with st.sidebar():
+with st.sidebar:
     st.link_button('Back to home', 'https://thechickenempire.streamlit.app/')
 st.image(Image.open('1.png'), width=500)
 st.image(Image.open('2.png'), width=500)
