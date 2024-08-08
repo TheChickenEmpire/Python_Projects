@@ -6,7 +6,7 @@ with st.sidebar:
     st.subheader(':rainbow[My channel]')
     st.link_button("Channel", 'https://www.youtube.com/@TheChickenEmpire')
     st.subheader(':rainbow[Chicken Empire Comics]')
-    st.link_button("Channel", 'https://thechickenempirecomic.streamlit.app/')
+    st.link_button("Comics", 'https://thechickenempirecomic.streamlit.app/')
     st.text('Made by Oscar')
 st.header('Welcome to')
 st.header(':rainbow[**The Chicken Empire**]')
