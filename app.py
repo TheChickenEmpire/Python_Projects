@@ -5,6 +5,7 @@ st.logo(Image.open('Chicken.png'))
 with st.sidebar:
     st.subheader(':rainbow[My channel]')
     st.link_button("Channel", 'https://www.youtube.com/@TheChickenEmpire')
+    
 st.subheader('Welcome to')
 st.header(':rainbow[**The Chicken Empire**]')
 st.subheader('_website_') 
