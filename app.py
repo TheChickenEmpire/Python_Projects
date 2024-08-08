@@ -7,7 +7,7 @@ with st.sidebar:
     st.link_button("Channel", 'https://www.youtube.com/@TheChickenEmpire')
     st.subheader(':rainbow[Chicken Empire Comics]')
     st.link_button("Comics", 'https://thechickenempirecomic.streamlit.app/')
-    st.text('Made by Oscar red[**warning there is \na bit of blood**]')
+    st.markdown('Made by Oscar red[**warning there is \na bit of blood**]')
 st.header('Welcome to')
 st.header(':rainbow[**The Chicken Empire**]')
 st.subheader('_website_') 
