@@ -5,7 +5,9 @@ st.logo(Image.open('Chicken.png'))
 with st.sidebar:
     st.subheader(':rainbow[My channel]')
     st.link_button("Channel", 'https://www.youtube.com/@TheChickenEmpire')
-    
+    st.subheader(':rainbow[Chicken Empire Comics]')
+    st.link_button("Channel", 'https://thechickenempirecomic.streamlit.app/')
+    st.text('Made by Oscar')
 st.subheader('Welcome to')
 st.header(':rainbow[**The Chicken Empire**]')
 st.subheader('_website_') 
