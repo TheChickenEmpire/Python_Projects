@@ -104,6 +104,7 @@ def listen():
         with sr.Microphone() as source:
             recognizer.adjust_for_ambient_noise(source, duration=1)
             print("Listening...")
+            speak('what')
             audio = recognizer.listen(source)
 
         try:
@@ -154,7 +155,6 @@ def main():
             c = listen2()
             if 'hey' in c or 'chip' in c or 'bot' in c:
                 break
-        speak('what')
         command = str(listen())
 
         if "hello how are you" in command:
