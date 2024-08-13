@@ -56,6 +56,6 @@ st.image(Image.open('49.png'), width=500)
 st.image(Image.open('50.png'), width=500)
 st.image(Image.open('51.png'), width=500)
 st.image(Image.open('52.png'), width=500)
-st.divider
+st.divider()
 st.subheader('Credits:')
 st.text('Oscar\nDonnie\nEthan\nMe')
