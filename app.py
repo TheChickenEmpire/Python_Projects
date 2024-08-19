@@ -8,6 +8,8 @@ with st.sidebar:
     st.subheader(':rainbow[Chicken Empire Comics]')
     st.link_button("Comics", 'https://thechickenempirecomic.streamlit.app/')
     st.markdown('Made by Oscar :red[**WARNING THERE IS \nA BIT OF BLOOD**]')
+st.text('Look at this beatiful person')
+st.camera_input('Look')
 st.header('Welcome to')
 st.header(':rainbow[**The Chicken Empire**]')
 st.subheader('_website_') 
