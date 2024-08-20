@@ -1,2 +1,2 @@
 import streamlit as st
-st.set_page_config('TEST')
+st.set_page_config('TEST', "🧪")
