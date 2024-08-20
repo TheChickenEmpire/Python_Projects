@@ -1,5 +1,26 @@
 import streamlit as st
 from PIL import Image
+import difflib
+def chat(asks: str, ans: str):
+    """Use this function for chatbots
+    By typing for example chat('Hi, Hello',
+                                                                                                Hi, Greetings)
+    It will return the Answer of the closest question Line 1 is Questions 
+    line 2 is answers"""
+    asks = asks.split(', ')
+    ans = ans.split(', ')
+    ask = st.chat_input('You:\n').lower()
+    e = difflib.get_close_matches(ask, asks, 1)
+    try:
+        e = e[0]
+        e = str(e)
+        e = e.replace('[', '')
+        e = e.replace(']', '')
+        e = e.replace("'", '')
+        index = asks.index(e)
+        return('Chatbot:\n'+ans[index].capitalize())
+    except:
+        return("Im sorry I don't understand what you mean")
 st.set_page_config(page_title='Chicken Empire', page_icon=":chicken:", layout= 'wide')
 st.logo(Image.open('Chicken.png'))
 with st.sidebar:
@@ -8,6 +29,7 @@ with st.sidebar:
     st.subheader(':rainbow[Chicken Empire Comics]')
     st.link_button("Comics", 'https://thechickenempirecomic.streamlit.app/')
     st.markdown('Made by Oscar :red[**WARNING THERE IS \nA BIT OF BLOOD**]')
+    st.chat_message(chat())
 st.header('Welcome to')
 st.header(':rainbow[**The Chicken Empire**]')
 st.subheader('_website_') 
