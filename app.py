@@ -18,9 +18,9 @@ def chat(asks: str, ans: str):
         e = e.replace(']', '')
         e = e.replace("'", '')
         index = asks.index(e)
-        return('Chatbot:\n'+ans[index].capitalize())
+        st.chat_message('Chatbot:\n'+ans[index].capitalize())
     except:
-        return("Im sorry I don't understand what you mean")
+        st.chat_message("Im sorry I don't understand what you mean")
 st.set_page_config(page_title='Chicken Empire', page_icon=":chicken:", layout= 'wide')
 st.logo(Image.open('Chicken.png'))
 with st.sidebar:
