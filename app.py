@@ -7,6 +7,8 @@ def chat(asks: str, ans: str):
                                                                                                 Hi, Greetings)
     It will return the Answer of the closest question Line 1 is Questions 
     line 2 is answers"""
+    asks = asks.lower()
+    ans = ans.lower()
     asks = asks.split(', ')
     ans = ans.split(', ') 
     ask = str(st.chat_input('You:')).lower()
@@ -21,7 +23,7 @@ def chat(asks: str, ans: str):
             e = e.replace(']', '')
             e = e.replace("'", '')
             index = asks.index(e)
-            return('Chatbot:\n'+ans[index].capitalize())
+            return('Chipbot:\n'+ans[index].capitalize())
         except: 
             return("Im sorry I don't understand what you mean")
 st.set_page_config(page_title='Chicken Empire', page_icon=":chicken:", layout= 'wide')
@@ -33,8 +35,8 @@ with st.sidebar:
     st.link_button("Comics", 'https://thechickenempirecomic.streamlit.app/')
     st.markdown('Made by Oscar :red[**WARNING THERE IS \nA BIT OF BLOOD**]')
     with st.chat_message('Chipbot'):
-        st.info(chat('hi',
-                      'hello'))
+        st.info(chat('hi, hello, where can i find the comics',
+                     'hello, hi, up here /\/\/\/\/\.........'))
 st.header('Welcome to')
 st.header(':rainbow[**The Chicken Empire**]')
 st.subheader('_website_') 
