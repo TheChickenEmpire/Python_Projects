@@ -10,7 +10,7 @@ def chat(asks: str, ans: str):
     asks = asks.split(', ')
     ans = ans.split(', ') 
     ask = str(st.chat_input('You:')).lower()
-    if ask == None:
+    if ask == 'none':
         pass
     else:
         e = difflib.get_close_matches(ask, asks, 1)
