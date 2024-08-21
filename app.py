@@ -11,7 +11,7 @@ def chat(asks: str, ans: str):
     ans = ans.split(', ') 
     ask = str(st.chat_input('You:')).lower()
     if ask == 'none':
-        pass
+        return('')
     else:
         e = difflib.get_close_matches(ask, asks, 1)
         try:
