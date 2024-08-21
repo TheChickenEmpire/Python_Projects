@@ -23,7 +23,7 @@ def chat(asks: str, ans: str):
             e = e.replace(']', '')
             e = e.replace("'", '')
             index = asks.index(e)
-            return('User:'+asks.capitalize()+'\nChipbot:\n'+ans[index].capitalize())
+            return('User:'+ask.capitalize()+'\nChipbot:\n'+ans[index].capitalize())
         except: 
             return("Im sorry I don't understand what you mean")
 st.set_page_config(page_title='Chicken Empire', page_icon=":chicken:", layout= 'wide')
