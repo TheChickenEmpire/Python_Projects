@@ -1,4 +1,5 @@
 import streamlit as st
+know = 'hi'
 from PIL import Image
 import difflib
 def chat(asks: str, ans: str):
@@ -30,8 +31,8 @@ with st.sidebar:
     st.link_button("Comics", 'https://thechickenempirecomic.streamlit.app/')
     st.markdown('Made by Oscar :red[**WARNING THERE IS \nA BIT OF BLOOD**]')
     with st.chat_message('Chipbot'):
-        st.info(chat('hi',
-                      'hello'))
+        know = + know +'\n'+chat()
+        st.info(know)
 st.header('Welcome to')
 st.header(':rainbow[**The Chicken Empire**]')
 st.subheader('_website_') 
