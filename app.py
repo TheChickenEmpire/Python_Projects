@@ -10,18 +10,20 @@ def chat(asks: str, ans: str):
     asks = asks.split(', ')
     ans = ans.split(', ') 
     ask = str(st.chat_input('You:')).lower()
-    st.text(ask)
-    e = difflib.get_close_matches(ask, asks, 1)
-    try:
-        e = e[0]
-        e = str(e)
-        e = e.replace('[', '')
-        e = e.replace(']', '')
-        e = e.replace("'", '')
-        index = asks.index(e)
-        return('Chatbot:\n'+ans[index].capitalize())
-    except: 
-        return("Im sorry I don't understand what you mean")
+    if ask == None:
+        pass
+    else:
+        e = difflib.get_close_matches(ask, asks, 1)
+        try:
+            e = e[0]
+            e = str(e)
+            e = e.replace('[', '')
+            e = e.replace(']', '')
+            e = e.replace("'", '')
+            index = asks.index(e)
+            return('Chatbot:\n'+ans[index].capitalize())
+        except: 
+            return("Im sorry I don't understand what you mean")
 st.set_page_config(page_title='Chicken Empire', page_icon=":chicken:", layout= 'wide')
 st.logo(Image.open('Chicken.png'))
 with st.sidebar:
