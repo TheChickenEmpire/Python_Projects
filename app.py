@@ -11,7 +11,7 @@ def chat(asks: str, ans: str):
     ans = ans.lower()
     asks = asks.split(', ')
     ans = ans.split(', ') 
-    ask = str(st.chat_input('You:')).lower()
+    ask = str(st.chat_input('Message')).lower()
     if ask == 'none':
         return('')
     else:
