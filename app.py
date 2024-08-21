@@ -10,6 +10,7 @@ def chat(asks: str, ans: str):
     asks = asks.split(', ')
     ans = ans.split(', ') 
     ask = str(st.chat_input('You:')).lower()
+    st.text('hi')
     e = difflib.get_close_matches(ask, asks, 1)
     try:
         e = e[0]
@@ -20,7 +21,7 @@ def chat(asks: str, ans: str):
         index = asks.index(e)
         return('Chatbot:\n'+ans[index].capitalize())
     except: 
-        return('')
+        return("Im sorry I don't understand what you mean")
 st.set_page_config(page_title='Chicken Empire', page_icon=":chicken:", layout= 'wide')
 st.logo(Image.open('Chicken.png'))
 with st.sidebar:
