@@ -30,7 +30,8 @@ with st.sidebar:
     st.link_button("Comics", 'https://thechickenempirecomic.streamlit.app/')
     st.markdown('Made by Oscar :red[**WARNING THERE IS \nA BIT OF BLOOD**]')
     with st.chat_message('Chipbot'):
-        st.write(chat('hi','hello'))
+        st.info(chat('hi',
+                      'hello'))
 st.header('Welcome to')
 st.header(':rainbow[**The Chicken Empire**]')
 st.subheader('_website_') 
