@@ -8,7 +8,7 @@ def chat(asks: str, ans: str):
     It will return the Answer of the closest question Line 1 is Questions 
     line 2 is answers"""
     asks = asks.split(', ')
-    ans = ans.split(', ')
+    ans = ans.split(', ') 
     ask = str(st.chat_input('You:')).lower()
     e = difflib.get_close_matches(ask, asks, 1)
     try:
@@ -18,9 +18,9 @@ def chat(asks: str, ans: str):
         e = e.replace(']', '')
         e = e.replace("'", '')
         index = asks.index(e)
-        st.chat_message('Chatbot:\n'+ans[index].capitalize())
+        return('Chatbot:\n'+ans[index].capitalize())
     except: 
-        st.chat_message("Im sorry I don't understand what you mean")
+        return("Im sorry I don't understand what you mean")
 st.set_page_config(page_title='Chicken Empire', page_icon=":chicken:", layout= 'wide')
 st.logo(Image.open('Chicken.png'))
 with st.sidebar:
@@ -29,7 +29,8 @@ with st.sidebar:
     st.subheader(':rainbow[Chicken Empire Comics]')
     st.link_button("Comics", 'https://thechickenempirecomic.streamlit.app/')
     st.markdown('Made by Oscar :red[**WARNING THERE IS \nA BIT OF BLOOD**]')
-    st.chat_message(chat('Hi','Hello'))
+    with st.chat_message('Chipbot'):
+        chat('Hi','Hello')
 st.header('Welcome to')
 st.header(':rainbow[**The Chicken Empire**]')
 st.subheader('_website_') 
