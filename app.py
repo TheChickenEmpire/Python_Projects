@@ -10,7 +10,7 @@ def chat(asks: str, ans: str):
     asks = asks.split(', ')
     ans = ans.split(', ') 
     ask = str(st.chat_input('You:')).lower()
-    st.text('hi')
+    st.text(ask)
     e = difflib.get_close_matches(ask, asks, 1)
     try:
         e = e[0]
