@@ -35,7 +35,7 @@ with st.sidebar:
     st.link_button("Comics", 'https://thechickenempirecomic.streamlit.app/')
     st.markdown('Made by Oscar :red[**WARNING THERE IS \nA BIT OF BLOOD**]')
     with st.chat_message('🍟'):
-        st.info(print('hi, hello, where can i find the comics, who is your favoirite youtuber, how do i get into the subscribers section on this website, how did you lose your channel, what is your favoirite food, Okay, what are you, are you happy, are you alive, English or spanish, what are you doing,',
+        st.info(chat('hi, hello, where can i find the comics, who is your favoirite youtuber, how do i get into the subscribers section on this website, how did you lose your channel, what is your favoirite food, Okay, what are you, are you happy, are you alive, English or spanish, what are you doing,',
                     'hello, hi, up here ^^^^^^^^^^, The Chicken Empire you can check out his channel here>>>https://www.youtube.com/@TheChickenEmpire, you just need to sunscribe to the chicken empire, i accidently deleted because of google, mcdonalds, yeah, Im a assistant created by the website designer who also created The Chicken Empire, yes under circumstances, No well accordingly, Ancient greek, nothing,'))
 st.header('Welcome to')
 st.header(':rainbow[**The Chicken Empire**]')
