@@ -89,3 +89,6 @@ st.text('Credits: By Me')
 st.divider()
 st.subheader('Credits')
 st.text('Donnie(My other friend)\nZxJoshua33(You should go see his channel)\nOppositeAce8412(You should go see his channel)\nChickens\nEthan(My other friend)')
+if st.checkbox(''):
+    if st.text_input('Password:') == st.secrets['Password']:
+        st.text('Hi')
