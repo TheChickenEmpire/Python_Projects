@@ -8,7 +8,7 @@ while True:
         select = input('Select Gravity\nLow, High, Intense, Impossible:\n').lower()
         i = int(0.5)
         if select == 'low':
-            gravity = 10
+            gravity = 1
             break
         elif select == 'high':
             gravity = 15

@@ -13,6 +13,5 @@ while True:
         Chipbot_Voice_Assistant.main()
     elif OT == '3':
         exit()
-        
     else:
         print("Non-Valid Input")

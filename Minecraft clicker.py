@@ -8,6 +8,7 @@ def click1():
 while True:
     if keyboard.is_pressed('ctrl'):
         click()
+        time.sleep(0.11)
     if keyboard.is_pressed('r'):
         click1()
     time.sleep(0.001)
