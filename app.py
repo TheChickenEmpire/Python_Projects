@@ -94,3 +94,4 @@ st.text('Oscar\nDonnie(My other friend)\nZxJoshua33(You should go see his channe
 if st.checkbox(''):
     if st.text_input('Password:').lower() == str(st.secrets['Password']).lower():
         pass
+st.text(st.experimental_user())
