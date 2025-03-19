@@ -10,4 +10,4 @@ while True:
         click()
     if keyboard.is_pressed('r'):
         click1()
-    time.sleep(0.001)
+    time.sleep(0.005)

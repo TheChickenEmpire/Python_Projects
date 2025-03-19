@@ -1,3 +1,42 @@
+<h1 id="Count">0</h1>
+<button id="Button">Click</button>
+<button id="RestartButton">Restart</button>
 <script>
-    console.log('hello world')
+    let hi = 0;
+    let startTime;
+    let interval;
+    const duration = 5 * 60 * 1000; // 5 minutes in milliseconds
+
+    function Update() {
+        if (!startTime) {
+            startTime = Date.now();
+            interval = setInterval(checkTime, 1000);
+        }
+        const elapsedTime = Date.now() - startTime;
+        if (elapsedTime >= duration) {
+            document.getElementById("Button").disabled = true;
+            return;
+        }
+        hi += 1;
+        document.getElementById("Count").innerText = hi;
+    }
+
+    function checkTime() {
+        const elapsedTime = Date.now() - startTime;
+        if (elapsedTime >= duration) {
+            clearInterval(interval);
+            const clicksPerSecond = hi / (duration / 1000);
+            alert(`Clicks per second: ${clicksPerSecond.toFixed(2)}`);
+        }
+    }
+
+    function restart() {
+        hi = 0;
+        startTime = null;
+        clearInterval(interval);
+        document.getElementById("Count").innerText = hi;
+    }
+
+    document.getElementById("Button").onclick = Update;
+    document.getElementById("RestartButton").onclick = restart;
 </script>
