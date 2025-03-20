@@ -90,7 +90,7 @@ st.image(Image.open('Roost.png'), width=400)
 st.text('Credits: By Me')
 st.divider()
 st.subheader('Credits')
-st.text('Oscar\nDonnie(My other friend)\nZxJoshua33(You should go see his channel)\nOppositeAce8412(You should go see his channel)\nChickens\nEthan(My other friend)')
+st.text('Oscar\nDonnie(My other friend)\nZxJoshua33(You should go see his channel)\nOppositeAce8412(You should go see his channel)\nChickens\nEthan(My other friend)\nConnor')
 if st.checkbox(''):
     if st.text_input('Password:').lower() == str(st.secrets['Password']).lower():
         st.text('wow you found nothing')
